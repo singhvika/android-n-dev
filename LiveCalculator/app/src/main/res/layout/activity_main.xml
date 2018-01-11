@@ -7,12 +7,57 @@
     tools:context="com.github.vrs1211.livecalculator.MainActivity">
 
     <TextView
+        android:id="@+id/selectTargetLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Select target Currency"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.098"
+        tools:text="Select target Currency" />
+
+    <TextView
+        android:id="@+id/selectBaseLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select base Currency"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032"
+        tools:text="Select base Currency" />
+
+    <Spinner
+        android:id="@+id/baseCurrencySpinner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:entries="1,2,3"
+        app:layout_constraintBottom_toBottomOf="@+id/selectBaseLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/selectBaseLabel"
+        app:layout_constraintTop_toTopOf="@+id/selectBaseLabel" />
+
+    <Spinner
+        android:id="@+id/targetCurrencySpinner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:entries="4,5,6"
+        app:layout_constraintBottom_toBottomOf="@+id/selectTargetLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/selectTargetLabel"
+        app:layout_constraintTop_toTopOf="@+id/selectTargetLabel" />
 
 </android.support.constraint.ConstraintLayout>

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">LiveCalculator</string>
+
+    <string-array name="supported_currencies">
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
 </resources>
