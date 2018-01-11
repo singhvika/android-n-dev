@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.github.vrs1211.demoapp.MainActivity">
+
+
+    <TextView
+        android:id="@+id/helloView"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#ea1616"
+        android:onClick="clickDefault"
+        android:tag="helloTextView"
+        android:text="Hello,"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.014" />
+
+    <TextView
+        android:id="@+id/vikasView"
+        android:layout_width="0dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="52dp"
+        android:onClick="clickDefault"
+        android:tag="vikasTextView"
+        android:text="vikas"
+        app:layout_constraintStart_toEndOf="@+id/helloView"
+        app:layout_constraintTop_toTopOf="@+id/helloView" />
+
+    <TextView
+        android:id="@+id/plcHolderView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:hapticFeedbackEnabled="true"
+        android:onClick="clickDefault"
+        android:padding="10dp"
+        android:tag="placeHolderTextView"
+        android:text="actual text"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/helloView"
+        app:layout_constraintTop_toBottomOf="@+id/helloView"
+        tools:text="placeholder" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="enter name"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/plcHolderView"
+        app:layout_constraintTop_toTopOf="@+id/plcHolderView" />
+
+</android.support.constraint.ConstraintLayout>
